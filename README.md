@@ -7,8 +7,8 @@
 - KnackSync is not a full-fledged offline-first solution. It is designed to be a lightweight library that provides basic synchronization capabilities with a Knack database.
 - KnackSync depends on [Knack's view-based requests](https://docs.knack.com/reference/view-based-requests) and avoids authentication outside of leveraging `Knack.getUserToken()`. At such, it will not work on any pages that are not login protected.
 ## 3. Setup
-- You can [lazy load the KnackSync library](https://docs.knack.com/reference/load-external-javascript-files) with a CDN link.
-``// cdn.jsdelivr.net/gh/jdmaccombs/knack-sync@latest/dist/knack-sync.min.js``
+- You can [lazy load the KnackSync library](https://docs.knack.com/reference/load-external-javascript-files) from the following Github link.
+``https://mahoneycombs.github.io/knacksync/src/ks.js``
 Lazy loading implementation of the CDN link here
 ``
 ## 4. How It Works
