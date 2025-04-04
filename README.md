@@ -12,6 +12,6 @@
 Lazy loading implementation of the CDN link here
 ``
 ## 4. How It Works
-> Upon loading, KnackSync checks for the existence of a KnackSync database in IndexedDB. If it does not exist, it creates one, leveraging app metadata (`https://api.knack.com/v1/applications/{your_app_id}`) available from the Knack API.
-> Once a KnackSync database is available in IndexedDB, KnackSync will check for the existence of two object stores: "ksObjects" and "ksScenes". KnackSync will then run some optimized checks to see if ksObjects and ksScenes need to be updated based on metadata available from the Knack API.
-> KnackSync
+- Upon loading, KnackSync checks for the existence of a KnackSync database in IndexedDB. If it does not exist, it creates one, leveraging app metadata (`https://api.knack.com/v1/applications/{your_app_id}`) available from the Knack API.
+
+- Once a KnackSync database is available in IndexedDB, KnackSync will check for the existence of two object stores: "ksObjects" and "ksScenes". KnackSync will then run some optimized checks to see if ksObjects and ksScenes need to be updated based on metadata available from the Knack API.
