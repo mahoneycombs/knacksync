@@ -1,6 +1,8 @@
 function initKS($, viewKeysToRegister = []) {
   const knackAppMetadata = Knack.loader_api;
+  console.log(knackAppMetadata);
   const appId = knackAppMetadata.application_id;
+  console.log(appId);
 
   // Create a metadata cache object
   const metadataCache = {
@@ -261,7 +263,7 @@ function initKS($, viewKeysToRegister = []) {
 
   // Register event handlers for the specified views
   function registerViewHandlers() {
-    // If no specific views were provided, register a handler for any view
+    //If no specific views were provided, register a handler for any view
     if (!viewKeysToRegister || viewKeysToRegister.length === 0) {
       $(document).on("knack-view-render.any", function (event, view, data) {
         console.log("View rendered:", view.key);
